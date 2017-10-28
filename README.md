@@ -6,14 +6,14 @@
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-The **Front-End Checklist** is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production.
+**Front-End Checklist**, web sitenizi/ HTML sayfanızı yayına vermeden önce test etmek için sahip olmanız gereken tüm öğelerin kapsamlı bir listesidir.
 
-It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
+Bu, bazı diğer açık-kaynak kontrol listelerinden gelen eklemelerle birlikte Front-End geliştiricilerinin sahip olduğu yılların birikimine dayanır.
 
-*Help to share the Front-End Checklist by voting and recommending on Product Hunt*
+*Front-End Checklist' i Product Hunt üzerinden oylayarak ve önererek paylaşmaya yardımcı olun.*
 [![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
-## Table of Contents
+## İçindekiler
 
 1. **[Head](#head)**
 2. **[HTML](#html)**
@@ -26,7 +26,7 @@ It is based on Front-End developers' years of experience, with the additions com
 9. **[Accessibility](#accessibility)**
 10. **[SEO](#seo)**
 
-## How to use?
+## Nasıl Kullanılır?
 
 All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
 
