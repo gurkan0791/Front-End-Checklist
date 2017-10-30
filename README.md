@@ -59,7 +59,7 @@ Bazı kaynaklar, içeriğin hangi tür olduğunu anlamanıza ya da kontrol liste
 
 *Sonraki 3 meta etiketinin (Charset, X-UA Compatible and Viewport) head alanında ilk olarak gelmesi gerekir.*
 
-* [ ] **Charset:** ![High][high_img] Charset (UTF-8) doğru bir şekilde tanımlandı.
+* [ ] **Charset:** ![High][high_img] Charset (UTF-8) doğru bir şekilde tanımlanır.
 
 ```html
 <!-- Belge için karakter kodlamasını belirle -->
@@ -75,64 +75,64 @@ Bazı kaynaklar, içeriğin hangi tür olduğunu anlamanıza ya da kontrol liste
 
 > * 📖 [Eski belge durumlarını belirleme (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
-* [ ] **Viewport:** ![High][high_img] Viewport doğru bir şekilde tanımlandı.
+* [ ] **Viewport:** ![High][high_img] Viewport doğru bir şekilde tanımlanır.
 
 ```html
 <!-- Duyarlı web tasarım için Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] Tüm sayfalarda bir başlık kullanıldı. (SEO: Google 472 ve 482 pixels arasında ayırarak başlıkta kullanılan karakterlerin piksel genişliğini hesaplar. Ortalama karakter sınırı 55-karakter civarı olacaktır).
+* [ ] **Title:** ![High][high_img] Tüm sayfalarda bir başlık kullanılır. (SEO: Google, başlıkta kullanılan karakterlerin piksel genişliğini, başlığı 472 ve 482 piksel arasında kesip ayırarak hesaplar. Ortalama karakter sınırı 55-karakter civarı olacaktır).
 
 ```html
-<!-- Document Title -->
-<title>Page Title less than 65 characters</title>
+<!-- Belge Başlığı -->
+<title>Sayfa Başlığı 65 karakterden daha azdır.</title>
 ```
 
 > * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 > * 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
 
-* [ ] **Description:** ![High][high_img] A meta description is provided, it is unique and doesn't possess more than 150 characters.
+* [ ] **Description:** ![High][high_img] Bir açıklama metası, eşsiz olan ve 150 karakterden fazlasına sahip olmayan bir şekilde oluşturulur.
 
 ```html
-<!-- Meta Description -->
-<meta name="description" content="Description of the page less than 150 characters">
+<!-- Meta Açıklama -->
+<meta name="description" content="Sayfanın açıklaması 150 karakterden daha azdır.">
 ```
 
-> * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
+> * 📖[Meta Açıklama - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
-* [ ] **Favicons:** ![Medium][medium_img] Each favicon has been created and displays correctly. If you have only a `favicon.ico`, put it at the root of your site. Normally you won't need to use any markup. However, it's still good practice to link to it using the example below. Today, **PNG format is recommended** over `.ico` format (dimensions: 32x32px).
+* [ ] **Favicons:** ![Medium][medium_img] Her bir favicon doğru bir şekilde oluşturuldu ve görüntülendi. Eğer sadece bir `favicon.ico` ' nuna sahipseniz, onu sitenizin kök dizinine koyun. Normalde başka herhangi bir işaret kullanmanız gerekmez. Buna rağmen, aşağıdaki örneği kullanarak ona bağlantı vermek hala iyi bir uygulamadır. Günümüzde, `.ico` biçimine nazaran **PNG biçimi önerilir**.(boyutlar: 32x32px).
 
 ```html
-<!-- Standard favicon -->
+<!-- Standart favicon -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- Recommended favicon format -->
+<!-- Önerilen favicon biçimi -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
-> * 🛠 [Favicon Generator](https://www.favicon-generator.org/)
+> * 🛠 [Favicon Oluşturucu](https://www.favicon-generator.org/)
 > * 🛠 [RealFaviconGenerator](https://realfavicongenerator.net/)
-> * 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
-> * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
+> * 📖 [Favicon Başvuru Kağıdı](https://github.com/audreyr/favicon-cheat-sheet)
+> * 📖 [Favicons, Touch Icons, Tile Icons, etc. Hangisine ihtiyacınız var? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Low][low_img] Apple touch favicon apple-mobile-web-app-capable are present. *(Create your Apple Icon file with at least 200x200px dimension to support all dimensions that you may need)*
+* [ ] **Apple Touch Icon:** ![Low][low_img] Apple mobil web uygulamasına duyarlı Apple touch favicon mevcut.*(İhtiyacınız olabilecek tüm boyutları desteklemek için en azından 200x200px boyutlu Apple Icon dosyası oluşturun)*
 
 ```html
 <!-- Apple Touch Icon -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
 ```
 
-> * 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [Web Uygulamalarını Yapılandırma](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-- [ ] **Windows Tiles:**![Low][low_img] Windows tiles are present and linked.
+- [ ] **Windows Tiles:**![Low][low_img] Windows tiles mevcut ve bağlantı sağlanmış.
 
 ```html
 <!-- Microsoft Tiles -->
 <meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
-Minimum required xml markup for the browserconfig.xml file is as follows:
+browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıdaki gibidir:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -150,25 +150,25 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 
 > * 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
-* [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` to avoid duplicate content.
+* [ ] **Canonical:** ![Medium][medium_img] Kopya içerikten kaçınmak için `rel="canonical"` kullanın.
 
 ```html
-<!-- Helps prevent duplicate content issues -->
+<!-- Kopya içerik sorunlarını önlemeye yardım eder -->
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
-> * 📖 [Use canonical URLs - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
-> * 📖 [5 common mistakes with rel=canonical - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
+> * 📖 [Standart URL'ler kullanma- Search Console Yardım - Google Support](https://support.google.com/webmasters/answer/139066?hl=tr)
+> * 📖 [rel=canonical ile ilgili 5 yaygın hata - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
 ### HTML tags
 
-* [ ] **Language attribute:** ![High][high_img] The `lang` attribute of your website is specified and related to the language of the current page.
+* [ ] **Language attribute:** ![High][high_img] Web sitenizin `lang` özelliği belirtilmiş ve geçerli sayfanın diliyle ilişkilendirilmiştir.
 
 ```html
 <html lang="en">
 ```
 
-* [ ] **Direction attribute:** ![Medium][medium_img] The direction of lecture is specified on the html tag (It can be used on another HTML tag).
+* [ ] **Direction attribute:** ![Medium][medium_img] Metin yönü HTML etiketi üzerinde belirtilmiş. (Bu farklı HTML etiketleri üzerinde kullanılabilir).
 
 ```html
 <html dir="rtl">
@@ -176,28 +176,28 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 
 > * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **Alternate language:** ![Low][low_img] Web sitenizin dil özelliği belirtilmiş ve geçerli sayfanın diliyle ilişkilendirilmiştir.
 
 ```html
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 ```
 
-* [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
+* [ ] **Conditional comments:** ![Low][low_img] Gerek duyulması halinde, IE için koşullu yorumlar mevcuttur..
 
-> * 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
+> * 📖 [Koşullu yorumlar hakkında (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
+* [ ] **RSS feed:** ![Low][low_img] Eğer projeniz bir blog ise veya makaleler içeriyorsa, bir RSS bağlantısı sağlandı.
 
-* [ ] **inline critical CSS:** ![Medium][medium_img] CSS which styles content that is immediately visible during pageload ("above the fold content") is called "critical CSS". It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
-> * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical) automates this
+* [ ] **inline critical CSS:** ![Medium][medium_img] Sayfa yüklenme ("ilk görünen üst kısım içeriği") sırasında hemen görünür olan içeriğe şekil veren CSS, kritik CSS olarak adlandırılır. Bu temel CSS kurallarınızdan önce ve tek bir satır olarak (küçültülmüş) `<style></style>` etiketleri arasına yerleştirilir.
+> * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical) bu işi otomatikleştirir
 
-* [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the case where sometimes JS files are loaded asynchronously on top of your page).
+* [ ] **CSS order:** ![High][high_img] Tüm CSS dosyaları `<head>` alanında tüm JavaScript dosyalarından önce yüklenir. (Kimi zaman JS dosyalarının sayfanıza eşzamanlı olmayan bir şekilde yüklendileri durumlar dışında.)
 
 ### Social meta
 
-***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
+***Facebook OG*** and ***Twitter Cards***, herhangi bir web sitesi için şiddetle tavsiye edilir. Diğer sosyal medya etiketlerini de düşünebilirsiniz eğer onlar üzerinde özel bir varlığı hedefliyor veya görünümden emin olmak istiyorsanız.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with a false information. Images need to be at least 600 x 315 pixels, 1200 x 630 pixels recommended.
+* [ ] **Facebook Open Graph:** ![Low][low_img] Tüm Facebook Open Graph (OG) etiketleri test edilmiş ve hiçbiri eksik ya da yanlış bir bilgiye sahip değil.
 
 ```html
 <meta property="og:type" content="website">
