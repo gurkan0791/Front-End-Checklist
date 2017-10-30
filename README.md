@@ -160,7 +160,7 @@ browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıda
 > * 📖 [Standart URL'ler kullanma- Search Console Yardım - Google Support](https://support.google.com/webmasters/answer/139066?hl=tr)
 > * 📖 [rel=canonical ile ilgili 5 yaygın hata - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
-### HTML tags
+### HTML etiketleri
 
 * [ ] **Language attribute:** ![High][high_img] Web sitenizin `lang` özelliği belirtilmiş ve geçerli sayfanın diliyle ilişkilendirilmiştir.
 
@@ -193,11 +193,13 @@ browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıda
 
 * [ ] **CSS order:** ![High][high_img] Tüm CSS dosyaları `<head>` alanında tüm JavaScript dosyalarından önce yüklenir. (Kimi zaman JS dosyalarının sayfanıza eşzamanlı olmayan bir şekilde yüklendileri durumlar dışında.)
 
-### Social meta
+### Sosyal meta
 
 ***Facebook OG*** and ***Twitter Cards***, herhangi bir web sitesi için şiddetle tavsiye edilir. Diğer sosyal medya etiketlerini de düşünebilirsiniz eğer onlar üzerinde özel bir varlığı hedefliyor veya görünümden emin olmak istiyorsanız.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] Tüm Facebook Open Graph (OG) etiketleri test edilmiş ve hiçbiri eksik ya da yanlış bir bilgiye sahip değil.
+* [ ] **Facebook Open Graph:** ![Low][low_img] Tüm Facebook Open Graph (OG) etiketleri test edilmiş ve hiçbiri eksik ya da yanlış bir bilgiye sahip değil. Resimlerin en az 600x315 piksel olması gerekir, 1200x600 piksel önerilir.
+
+> **Notlar:** `og:image:width` and `og:image:height` kullanımı tarayıcı(Facebot) için resim boyutlarını belirtir ve böylece resmi eş zamanlı olmayan bir şekilde yüklemeye ve işlemeye gerek duymadan hemen sunabilir.
 
 ```html
 <meta property="og:type" content="website">
@@ -207,10 +209,14 @@ browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıda
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
+<!-- Sonraki etiketler isteğe bağlıdır ama önerilir -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 ```
 
-> * 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
-> * 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
+> * 📖 [Web Yöneticileri İçin Paylaşım Rehberi](https://developers.facebook.com/docs/sharing/webmasters/)
+> * 📖 [En İyi Uygulamalar - Paylaşma](https://developers.facebook.com/docs/sharing/best-practices/)
+> * 🛠 [Facebook OG testing](https://developers.facebook.com/tools/debug/) ile sayfanızı test edin.
 
 * [ ] **Twitter Card:** ![Low][low_img]
 
@@ -224,30 +230,30 @@ browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıda
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
-> * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-> * 🛠 Test your page with the [Twitter card validator](https://cards-dev.twitter.com/validator)
+> * 📖 [Twitter cards başlangıç rehberi— Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
+> * 🛠 [Twitter card validator](https://cards-dev.twitter.com/validator) ile sayfanızı test edin.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
 ## HTML
 
-### Best practices
+### En iyi uygulamalar
 
-* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+* [ ] **HTML5 Anlamsal Öğeler:** ![High][high_img] HTML5 Anlamsal Öğeler gereğine uygun olarak kullanılıyor. (header, section, footer, main...).
 
-> * 📖 [HTML Reference](http://htmlreference.io/)
+> * 📖 [HTML Referans](http://htmlreference.io/)
 
-* [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have their CSS integrated (no external call on the current server).
+* [ ] **Hata sayfaları:** ![High][high_img] Hata 404 ve 5xx sayfaları mevcut. 5xx hata sayfalarının CSS kurallarının dahili olması gerektiğini unutmayın(mevcut sunucu üzerinden hiçbir harici çağrı yok).
 
-* [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
+* [ ] **Noopener:** ![Medium][medium_img] `target="_blank"` 'e sahip harici bağlantılar kullanıyorsanız, sekme ele geçirme saldırısını önlemek için bağlantınızın bir `rel="noopener"` özelliğine sahip olması gerekir.
 
-> * 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
+> * 📖 [rel=noopener hakkında](https://mathiasbynens.github.io/rel-noopener/)
 
-* [ ] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
+* [ ] **Yorumları temizle:** ![Low][low_img] Gereksiz kodlar sayfa yayına verilmeden önce kaldırılmalıdır.
 
-### HTML testing
+### HTML testi
 
 * [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
 
