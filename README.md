@@ -28,61 +28,61 @@ Bu, bazı diğer açık-kaynak kontrol listelerinden gelen eklemelerle birlikte 
 
 ## Nasıl Kullanılır?
 
-All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
+**Front-End Checklist**' de bulunan tüm öğeler web projelerinin çoğunluğu için gereklidir, fakat bazı öğeler dahil edilmeyebilir ya da birinci derecede önemli değildir(bir admin paneli web uygulamasında, örneğin RSS beslemesine gerek duymayabilirsiniz). Biz 3 esneklik seviyesi kullanmayı uygun buluyoruz:
 
-* ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
-* ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
-* ![High][high_img] means that the item **can't be omitted** by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+* ![Low][low_img] öğenin tavsiye edildiği ama bazı özel durumlarda ihmal edilebileceğini ifade eder.
+* ![Medium][medium_img] öğenin şiddetle tavsiye edildiğini ve ancak bazı çok önemli durumlarda çıkarılabileceğini ifade eder. Bazı öğeler dahil edilmediği taktirde performans ve SEO açısından istenmeyen sonuçlar doğurabilir.
+* ![High][high_img] öğenin herhangi bir nedenden dolayı ihmal edilemeyeceğini ifade eder. Sayfanızda işlev bozukluğuna neden olabilir, erişilebilirlik veya SEO sorunlarıyla karşılaşabilirsiniz.
 
-Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
+Bazı kaynaklar, içeriğin hangi tür olduğunu anlamanıza ya da kontrol listesi üzerinde bulabilmenize yardımcı olmak için bir ifadeye sahipler.
 
-* 📖: documentation or article
-* 🛠: online tool / testing tool
-* 📹: media or video content
+* 📖: belge veya makale
+* 🛠: çevrimiçi araç / test aracı
+* 📹: medya veya video içerik
 
 ---
 
 ## Head
 
-> **Notes:** You can find [a list of everything](https://github.com/joshbuchea/HEAD) that could be found in the `<head>` of an HTML document.
+> **Notlar:** HTML belgesinin `<head>` bölümünde bulunabilecek olan [her şeyin bir listesini](https://github.com/joshbuchea/HEAD) bulabilirsiniz.
 
-### Meta tag
+### Meta etiketi
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [ ] **Doctype:** ![High][high_img] Doctype bir HTML5' tir ve tüm HTML sayfalarınızın en üst kısmındadır.
 
 ```html
 <!-- Doctype HTML5 -->
 <!doctype html>
 ```
 
-> * 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+> * 📖 [Karakter kodlamasını belirleme - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.*
+*Sonraki 3 meta etiketinin (Charset, X-UA Compatible and Viewport) head alanında ilk olarak gelmesi gerekir.*
 
-* [ ] **Charset:** ![High][high_img] The charset declared (UTF-8) is declared correctly.
+* [ ] **Charset:** ![High][high_img] Charset (UTF-8) doğru bir şekilde tanımlandı.
 
 ```html
-<!-- Set character encoding for the document -->
+<!-- Belge için karakter kodlamasını belirle -->
 <meta charset="utf-8">
 ```
 
-* [ ] **X-UA-Compatible:** ![Medium][medium_img] The X-UA-Compatible meta tag is present.
+* [ ] **X-UA-Compatible:** ![Medium][medium_img] X-UA-Compatible meta etiketi mevcut.
 
 ```html
-<!-- Instruct Internet Explorer to use its latest rendering engine -->
+<!-- Internet Explorer' u  en yeni işleme motorunu kullanması için bilgilendir. -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
-> * 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
+> * 📖 [Eski belge durumlarını belirleme (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
-* [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+* [ ] **Viewport:** ![High][high_img] Viewport doğru bir şekilde tanımlandı.
 
 ```html
-<!-- Viewport for responsive web design -->
+<!-- Duyarlı web tasarım için Viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: Google calculate the pixel width of the characters used in the title, cut off between 472 and 482 pixels. Average character limit would be around 55-characters).
+* [ ] **Title:** ![High][high_img] Tüm sayfalarda bir başlık kullanıldı. (SEO: Google 472 ve 482 pixels arasında ayırarak başlıkta kullanılan karakterlerin piksel genişliğini hesaplar. Ortalama karakter sınırı 55-karakter civarı olacaktır).
 
 ```html
 <!-- Document Title -->
