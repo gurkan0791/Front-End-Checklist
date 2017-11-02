@@ -255,38 +255,46 @@ browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıda
 
 ### HTML testi
 
-* [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
+* [ ] **W3C uyumlu:** ![High][high_img] Muhtemel HTML kod sorunlarını belirlemek için tüm sayfalar W3C doğrulayıcıyla test edilmelidir.
 
 > * 🛠 [W3C validator](https://validator.w3.org/)
 
-* [ ] **HTML Lint:** ![High][high_img] I use tools to help me analyze any issues I could have on my HTML code.
+* [ ] **HTML Lint:** ![High][high_img] HTML kodumda karşılaşabileceğim herhangi bir sorunu analiz etmeme yardım edecek araçlar kullanırım.
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/)
+> * 🛠 [Sonar a linting tool for the web](https://sonarwhal.com/)
 
-* [ ] **Link checker:** ![High][high_img] There are no broken links in my page, verify that you don't have any 404 error.
+* [ ] **Bağlantı kontrolcüsü:** ![High][high_img] Sayfamda hiç kırık bağlantı yok, 404 hatanız olmadığını doğrulayın.
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-* [ ] **Adblockers test:** ![Medium][medium_img] Your website shows your content correctly with adblockers enabled (You can provide a message encouraging people to disable their adblocker).
+* [ ] **Reklam engelleyici testi:** ![Medium][medium_img] Web siteniz, reklam engelleyici yazılımların aktif olduğu durumda, içeriğinizi doğru şekilde gösteriyor.(İnsanlara reklam engelleyici yazılımlarını devre dışı bırakmalarını teşvik edici bildirimler sunabilirsiniz).
 
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
 ## Webfonts
 
-* [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
+> **Notlar:** Web yazı tipleri kullanmak, biçimlendirilmemiş metin ortaya çıkması(FOUT)/ net görünmeyen metin belirmesi(FOIT) sorunlarına neden olabilir. Bu durumu kontrol etmek için alternatif yazı tipleri ve/veya web yazı tipi yükleyicilerini kullanmayı düşünün.
+> * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
+
+* [ ] **Web yazı tipi dosya biçimi:** ![High][high_img] WOFF, WOFF2 ve TTF tüm modern tarayıcılarla desteklenir.
 
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
 > * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
 > * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
 > * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **Webfont size:** ![High][high_img] Webfont sizes don't exceed 2 MB (all variants included).
+* [ ] **Web yazı tipi boyutu:** ![High][high_img] Web yazı tipi dosyaları 2 MB(tüm biçimler dahil) 'ı aşmamalı.
 
-**[⬆ back to top](#table-of-contents)**
+* [ ] **Web yazı tipi yükleyicisi:** ![Low][low_img] Bir web yazı tipi yükleyicisi ile yükleme davranışını kontrol edin.
+
+> * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
+
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
