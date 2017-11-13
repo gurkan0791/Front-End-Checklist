@@ -300,30 +300,30 @@ browserconfig.xml dosyası için gereken minimum xml biçimlendirmesi aşağıda
 
 ## CSS
 
-> **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/) followed by most  Front-End developers. If you have a doubt about CSS properties, you can visit [CSS Reference](http://cssreference.io/).
+> **Notlar:** Pek çok Front-End geliştiriciler tarafından takip edilen [CSS Kılavuz](https://cssguidelin.es/) ve [Sass Kılavuz](https://sass-guidelin.es/) sitelerine gözatın. Eğer CSS özellikleri ile ilgili şüphelerin varsa, [CSS Reference](http://cssreference.io/) sitesini ziyaret edebilirsin.
 
-* [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
-* [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
-* [ ] **Preprocessors:** ![Low][low_img] Your page is using a CSS preprocessor ([Sass](http://sass-lang.com/) is preferred).
-* [ ] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
-* [ ] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
+* [ ] **Duyarlı Web Tasarım:** ![High][high_img] Web site, duyarlı web tasarımı uyguluyor. 
+* [ ] **CSS Print:** ![Medium][medium_img] Bir baskı stil dosyası sağlanmış ve her sayfada hatasız.
+* [ ] **Önişlemciler:** ![Low][low_img] Sayfanız bir CSS önişlemcisi kullanıyor ([Sass](http://sass-lang.com/) tercih edilen).
+* [ ] **Benzersiz Kimlik:** ![High][high_img] Eğer kimlik kullanılıyorsa, her sayfa için benzersizdir.
+* [ ] **CSS Sıfırlama:** ![High][high_img] CSS sıfırlama işlemi( sıfırlama, standartlaştırma veya yeniden yükleme) kullanıldı ve güncel. *(Eğer Bootstrap veya Foundation gibi CSS Framework' ları kullanıyorsanız zaten bu işlemler dahil edilmiştir.)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS prefix:** ![Low][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled into the CSS files.
+* [ ] **JS öneki:** ![Low][low_img] JavaScript dosyalarında kullanılan tüm class ve id' ler **js-** ile başlıyor ve CSS dosyalarında stilize edilmemiş.
 
 ```html
 <div id="js-slider" class="my-slider">
-<!-- Or -->
+<!-- Veya -->
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **Embedded or inline CSS:** ![High][high_img] Avoid at all cost embeding CSS in `<style>` tags or using inline CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
-* [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
+* [ ] **Gömülmüş veya satır içi CSS:** ![High][high_img] CSS işlemlerinizi `<style>` etiketlerine gömmekten veya satır için CSS kullanmaktan mümkün mertebe kaçının: sadece geçerli  sebebler için kullanın (slider için background-image, kritik CSS gibi).
+* [ ] **Sağlayıcı önekleri:** ![High][high_img] Css sağlayıcı önekleri kullanıldı ve tarayıcınızın uyumluluk desteğine göre oluşturuldu.
 
-> * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
+> * 🛠 [Çevrimiçi Autoprefixer CSS](https://autoprefixer.github.io/)
 
 ### Performance
 
